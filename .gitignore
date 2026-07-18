@@ -99,3 +99,7 @@ build/downloads/
 
 meta-titan/
 poky/
+
+# Internal planning docs
+TITAN_V13_*.md
+SPEC_DRIVEN_DEVELOPMENT.md
