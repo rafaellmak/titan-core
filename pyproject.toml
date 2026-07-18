@@ -1,0 +1,59 @@
+[project]
+name = "titan-core"
+version = "12.0.0"
+description = "Embedded Intelligence Runtime for Yocto/Buildroot engineering. Event-driven, agentic, with a Digital Twin and a Learning Loop."
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "Tecmak" }]
+keywords = ["embedded", "linux", "yocto", "buildroot", "agentic", "rag", "event-driven", "embedded-systems", "ci-cd", "devops"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Embedded Systems",
+    "Topic :: System :: Systems Administration",
+    "Typing :: Typed",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.100.0",
+    "uvicorn[standard]>=0.23.0",
+    "pydantic>=2.0.0",
+    "fpdf2>=2.7.0",
+    "networkx>=3.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-asyncio>=0.21.0",
+    "pytest-cov>=4.1.0",
+    "httpx>=0.24.0",
+    "build>=0.10.0",
+]
+docker = []
+
+[project.urls]
+Homepage = "https://github.com/tecmak/titan-core"
+Repository = "https://github.com/tecmak/titan-core"
+Issues = "https://github.com/tecmak/titan-core/issues"
+
+[project.scripts]
+titan = "titan.cli:main"
+
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["titan", "titan.*"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-ra -q --strict-markers"

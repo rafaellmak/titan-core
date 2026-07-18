@@ -1,0 +1,6 @@
+#!/bin/sh
+# Placeholder for Yocto's oe-init-build-env. The real init script is generated
+# by `kas checkout` or by cloning poky and running scripts/oe-init-build-env.
+# Titan's WorkspaceDetector only checks for the existence of this file as a
+# marker that the project is a Yocto workspace; its content is not read.
+exit 0

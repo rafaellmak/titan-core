@@ -1,0 +1,101 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.eggs/
+.installed.cfg
+*.egg
+
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.cache
+.mypy_cache/
+.ruff_cache/
+
+.venv/
+venv/
+ENV/
+env/
+
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+.titan/
+.titan_digital_twin/
+.titan_knowledge/
+.titan_memory/
+.titan_audit/
+
+# Test artifacts
+test_titan/
+.test_titan/
+.titan_*test*/
+
+# Legacy
+titan/legacy/
+tmp/
+*.log
+*.bak
+*.orig
+
+# Yocto build artifacts (keep build/conf but ignore build/tmp)
+build/tmp/
+build/sstate-cache/
+build/downloads/
+
+# Runtime data (created by Titan at runtime)
+.titan/
+.titan_digital_twin/
+.titan_knowledge/
+.titan_memory/
+.titan_audit/
+.titan_cache/
+.titan_recipe_db/
+
+# Python package build
+*.egg-info/
+*.egg
+
+# IDE/Editor (keep .github/ for CI)
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+
+# Local config overrides (if any)
+*.local.conf
+*.local.yml
+
+# Lightning AI / cloud specific
+/teamspace/
+*.lightning/
+
+# Development zip backups
+*.zip
+
+meta-titan/
+poky/
