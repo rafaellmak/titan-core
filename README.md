@@ -3,7 +3,7 @@
 > **Embedded Intelligence Runtime for Yocto/Buildroot engineering.**
 > Event-driven. Agentic. With a Digital Twin and a Learning Loop.
 
-[![CI](https://github.com/tecmak/titan-core/actions/workflows/ci.yml/badge.svg)](https://github.com/tecmak/titan-core/actions/workflows/ci.yml)
+[![CI](https://github.com/rafaellmak/titan-core/actions/workflows/ci.yml/badge.svg)](https://github.com/rafaellmak/titan-core/actions/workflows/ci.yml)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Yocto](https://img.shields.io/badge/Yocto-compatible-blueviolet.svg)](https://www.yoctoproject.org/)
@@ -108,7 +108,7 @@ Yocto build failures are a 3 AM problem. The log is gigabytes long, the recipe g
 ### CLI
 
 ```bash
-git clone https://github.com/tecmak/titan-core
+git clone https://github.com/rafaellmak/titan-core
 cd titan-core
 pip install -e ".[dev]"
 
